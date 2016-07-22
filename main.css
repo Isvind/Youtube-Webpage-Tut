@@ -43,12 +43,18 @@ a:hover, a:active {
 .aboutheader nav ul li {
   display: inline;
   float: right;
-  padding: 10px 25px;
 }
-.aboutheader nav a:active {
+.aboutheader nav a:link, .aboutheader nav a:visited {
   color: #fff;
-  background-color: rgb(198, 6, 81);
+  display: inline-block;
+  padding: 10px 25px;
   height: 20px;
+
+}
+.aboutheader nav a:active, .aboutheader nav a:hover {
+  background-color: #d71147;
+  text-shadow: none;
+
 }
 
 
@@ -190,12 +196,18 @@ a:hover, a:active {
 /*This makes the page responsive*/
 
 @media only screen and (min-width: 150px) and (max-width: 600px) {
-/*TODO: Come back and make self-made navbar responsive.*/
 
     .body {
         width: 90%;
         /*Makes this 70% of total screen size, so it doesn't use all the screen*/
         font-size: 95%;
+    }
+
+    /*TODO: Come back and center the text of the selfmade navbar on top*/
+
+    .aboutheader nav ul li {
+      display: inline;
+      float: center;
     }
     .mainheader img {
         width: 100%;

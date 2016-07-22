@@ -1,0 +1,256 @@
+/*This is some come you can always have*/
+
+body {
+    background-image: url('http://wallpoper.com/images/00/30/34/11/gaussian-blur_00303411.jpg');
+    font-family: 'Open Sans', 'Helvetica Neue';
+    font-size: 87.5%;
+    /*Base font size is 14px */
+    line-height: 1.5;
+}
+
+/*End of useful code*/
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: rgb(198, 6, 81);
+}
+a:hover, a:active {
+    background-color: rgb(198, 6, 81);
+    border-radius: 5px;
+    color: #fff;
+}
+.body {
+    margin: 0 auto;
+    /*Makes everything centered*/
+    width: 70%;
+    /*Makes this 70% of total screen size, so it doesn't use all the screen*/
+    clear: both;
+    /*You should always use clear:both*/
+}
+/*TODO:Challenge: Integrate an above header */
+/*Self made code starts here*/
+.aboutheader nav{
+  background-color: #666;
+  height: 40px;
+  border-radius: 5px;
+}
+.aboutheader nav ul {
+  list-style: none;
+  margin: 0 auto; /*This sets the nav bar clamped to the top of the browser*/
+}
+.aboutheader nav ul li {
+  display: inline;
+  float: right;
+  padding: 10px 25px;
+}
+.aboutheader nav a:active {
+  color: #fff;
+  background-color: rgb(198, 6, 81);
+  height: 20px;
+}
+
+
+/*Self-made code ends here*/
+/*Watch out for this code, pretty useful & important*/
+
+.mainheader img {
+    width: 30%;
+    height: auto;
+    margin: 2% 0;
+    /*Makes the image start a little bit below from above*/
+}
+
+/*Watch out for this code, pretty useful & important*/
+
+
+/*From a class we can also access other elements, like the mainheader nav*/
+
+.mainheader nav {
+    background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    /*Round corners!*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/*Watch out for this code, pretty useful & important*/
+
+.mainheader nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+/*Watch out for this code, pretty useful & important*/
+
+.mainheader nav ul li {
+    float: left;
+    /*push each element to the left*/
+    display: inline;
+}
+.mainheader nav a:link, .mainheader nav a:visited {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    /*IMPORTANT CODE PART- Makes the nav text go centered in the nav box*/
+    /*10px 25px means 10 top-bottom 25 left-right*/
+    height: 20px;
+}
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
+    background-color: #d71147;
+    text-shadow: none;
+}
+.mainheader nav ul li a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.mainContent {
+    line-height: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.content {
+    width: 70%;
+    /*70% OF THE BODY CONTENT, NOT PAGE CONTENT*/
+    margin-top: 2%;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.topcontent {
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+.bottomcontent {
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+.postInfo {
+    font-style: italic;
+    color: #999;
+    font-size: 90%;
+}
+.top-sidebar {
+    width: 21%;
+    /*21% because the 70% width of articles + the 3% padding on top&bottom content + the 3% padding to the right */
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    padding: 2% 3%;
+}
+.middle-sidebar {
+    width: 21%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    /*values are clockwise: top, right, bottom, left*/
+    padding: 2% 3%;
+}
+.bottom-sidebar {
+    width: 21%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    padding: 2% 3%;
+}
+.main-footer {
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    background-color: #666;
+    margin-top: 2%;
+}
+.main-footer p {
+    width: 92%;
+    margin: 10px auto;
+    color: #fff;
+}
+
+/*This makes the page responsive*/
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+/*TODO: Come back and make self-made navbar responsive.*/
+
+    .body {
+        width: 90%;
+        /*Makes this 70% of total screen size, so it doesn't use all the screen*/
+        font-size: 95%;
+    }
+    .mainheader img {
+        width: 100%;
+    }
+    .mainheader nav {
+        height: 160px;
+    }
+    /*Watch out for this code, pretty useful & important*/
+    .mainheader nav ul {
+        padding-left: 0;
+    }
+    /*Watch out for this code, pretty useful & important*/
+    .mainheader nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .mainheader nav a:link, .mainheader nav a:visited {
+        padding: 10px 25px;
+        height: 20px;
+        display: block;
+    }
+    .content {
+        width: 100%;
+        /*70% OF THE BODY CONTENT, NOT PAGE CONTENT*/
+        float: left;
+        margin-top: 2%;
+    }
+    .postInfo {
+        display: none;
+    }
+    .topcontent {
+        background-color: #fff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 3% 5%;
+        margin-top: 2px;
+        margin-bottom: 3%;
+    }
+    .bottomcontent {
+        background-color: #fff;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 3% 5%;
+        margin-top: 3%;
+    }
+    .top-sidebar, .middle-sidebar, .bottom-sidebar {
+        width: 94%;
+        /*21% because the 70% width of articles + the 3% padding on top&bottom content + the 3% padding to the right */
+        float: left;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 2% 0 2% 0;
+        padding: 2% 3%;
+    }
+
+}
